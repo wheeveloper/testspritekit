@@ -7,7 +7,12 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import <CoreMotion/CoreMotion.h>
 
 @interface MyScene : SKScene
-
+{
+    BOOL isFirst;
+    float accX;
+}
+@property (strong, nonatomic) CMMotionManager *motionManager;
 @end
